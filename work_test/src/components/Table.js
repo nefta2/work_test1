@@ -1,19 +1,21 @@
-import React from 'react';
-
-const Table = () => {
-	const Datos = [{ class: 'car' }, { class: 'van' }];
+const Table = ({ classCar }) => {
 	return (
-		<table style={{ width: 500, align: 'center' }}>
-			<tr>
-				{Datos.map((datos) => (
-					<th>{datos.class}</th>
-				))}
-			</tr>
-			<tr>
-				<th>Picanto</th>
-				<th>Cul</th>
-			</tr>
-		</table>
+		<>
+			{classCar.length && (
+				<table style={{ width: 1000 }} className="container">
+					<tbody>
+						{Object.keys(classCar[0]).map((datos, index) => (
+							<tr key={index}>
+								<th>{datos}</th>
+								{classCar.map((value, index2) => (
+									<th key={index2}>{value[datos]}</th>
+								))}
+							</tr>
+						))}
+					</tbody>
+				</table>
+			)}{' '}
+		</>
 	);
 };
 
