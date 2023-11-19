@@ -18,9 +18,7 @@ const Graph = ({ graphMed, vehicle, component, buttonClicked }) => {
 
 	const data = {
 		labels:
-			component === 'all'
-				? Object.keys(graphMed[0]).slice(1).replace(/[_]/g, '')
-				: [component],
+			component === 'all' ? Object.keys(graphMed[0]).slice(1) : [component],
 		datasets: [
 			{
 				label:
