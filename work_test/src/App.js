@@ -46,6 +46,7 @@ function App() {
 		<div>
 			<h1>Desviación estándar</h1>
 			<Table classCar={classCar} />
+			<h1 id="paddingTop">Promedio</h1>
 			<Search classCar={classCar} graphMed={graphMed} />
 		</div>
 	);

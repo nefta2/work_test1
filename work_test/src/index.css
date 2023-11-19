@@ -13,12 +13,8 @@ body {
 h1 {
 	display: flex;
 	margin: 30px;
-}
-
-.container {
-	max-width: 500px;
-	margin: 30px auto;
-	min-height: 300px;
+	justify-content: space-around;
+	color: #383838;
 }
 
 .header {
@@ -33,6 +29,16 @@ footer {
 	text-align: center;
 }
 
+select {
+	padding: 0.675em 6em 0.675em 1em;
+	background-color: #fff;
+	border: 1px solid #caced1;
+	border-radius: 0.25rem;
+	color: #000;
+	cursor: pointer;
+	margin: 0px 10px 0px 10px;
+}
+
 .containerBar {
 	width: 70%;
 }
@@ -41,4 +47,65 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.button {
+	position: relative;
+	background-color: #593cfb;
+	border-radius: 8px;
+	border: none;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+.upperTableTr {
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.4;
+	background-color: #593cfb;
+}
+.upBanners {
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+table {
+	border-collapse: collapse;
+	max-width: 828px;
+	margin: 5px auto;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 7px 20px 0px #e6e6e6;
+}
+
+.dataStyle {
+	font-size: 15px;
+	color: #808080;
+	line-height: 1.4;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+th,
+td {
+	padding-left: 40px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+#paddingTop {
+	padding-top: 30px;
+	margin: 8px;
+}
+
+.optionsDiv {
+	display: flex;
 }

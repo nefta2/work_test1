@@ -1,4 +1,4 @@
-const SearchComp = ({ keyName, onChange }) => {
+const SearchComp = ({ keyName, onChange, buttonClicked }) => {
 	const handleCompChange = (event) => {
 		onChange(event.target.value);
 	};
@@ -6,6 +6,7 @@ const SearchComp = ({ keyName, onChange }) => {
 		<>
 			{keyName.length && (
 				<select onChange={handleCompChange}>
+					<option>{'Select a component'}</option>
 					<option value={'all'}>All</option>
 					{Object.keys(keyName[0])
 						.slice(1)
